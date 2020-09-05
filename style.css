@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 2rem;
+}
+
+.container > * + * {
+  margin: 0.5rem 0;
+}
+
+/* Flex Box Styles */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-ml-2 > * + * {
+  margin-left: 2rem;
+}
+
+.flex-mt-1 > * + * {
+  margin-top: 0.5rem;
+}
+
+/* margin and padding */
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-10 {
+  padding: 0 100px;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-5 {
+  margin-left: 5rem;
+}
+
+/* Table Styles */
+
+td > input {
+  border: none;
+  width: 550px;
+}
+
+/* Text style */
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-size-1 {
+  font-size: 1.3rem;
+}
+
+/* border styles */
+
+.border-col {
+  border-collapse: collapse;
+}
+
+.border-solid {
+  border: 1px solid #000000;
+}
+
+.block > input {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #333333;
+}
+
+.td-block > input {
+  height: 20px;
+  width: 20px;
+  border-right: 1px solid #333333;
+}

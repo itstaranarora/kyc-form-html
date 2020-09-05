@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container flex flex-col">
+      <div>
+        <h2>Know Your Client (KYC) Application Form - for Individuals</h2>
+        <p>Please fill this form in English and BLOCK Letters</p>
+        <p>
+          (Please tick the box on the left margin of the appropriate row where
+          CHANGE/CORRECTION is required and provide the details in the
+          corresponding window)
+        </p>
+      </div>
+      <div class="flex flex-col border-solid p-1">
+        <span class="font-size-1">
+          <span class="bold">For office use only</span> (To be filled by the
+          financial institution)
+        </span>
+        <div class="flex space-between">
+          <span>Application Type*</span>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> New </label>
+          </div>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Update </label>
+          </div>
+          <div class="flex align-center">
+            <label> KYC </label>
+            <div class="flex block align-center ml-1">
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="flex space-between" style="padding-right: 6.5rem">
+          <span>Account Type*</span>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Normal </label>
+          </div>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Simplified (for low risk customers) </label>
+          </div>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Small</label>
+          </div>
+        </div>
+      </div>
+      <h3>A. Identity details</h3>
+      <div class="flex space-between">
+        <table class="table border-solid border-col">
+          <tr class="border-solid">
+            <th class="border-solid" rowspan="2">1. Name (Same as ID Proof)</th>
+            <td><input type="text" /></td>
+          </tr>
+          <tr class="border-solid">
+            <td><input type="text" /></td>
+          </tr>
+          <tr class="border-solid">
+            <td class="border-solid">1a. Maiden Name (If any)</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr class="border-solid">
+            <td class="border-solid">2. Father's/Spouse's Name</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr class="border-solid">
+            <td class="border-solid">2a. Mother's Name</td>
+            <td><input type="text" /></td>
+          </tr>
+        </table>
+        <div class="p-1 mx-auto border-solid text-center">
+          <h3 class="bold">Photograph</h3>
+          <span>please affix your </br> recent passport size </br> photograph and </br> sign across it </span>
+        </div>
+      </div>
+      <div class="flex space-between">
+        <span class="bold">3a. Gender</span>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Male </label>
+        </div>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Female</label>
+        </div>
+        <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1">  Transgender</label>
+        </div>
+        <span class="bold">3b. Marital Status</span>
+        <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Single</label>
+          </div>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Married</label>
+          </div>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label> Other</label>
+          </div>
+          <div class="flex ml-1 block align-center">
+            <label class="bold"> 3c. DOB</label>
+            <div class="flex block align-center ml-1">
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+            </div>
+          </div>
+      </div>
+      <div class="flex flex-ml-2 " style="margin-right: 10rem;">
+        <span class="bold">4a. Citizenship</span>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Indian </label>
+        </div>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <span class="ml-1"> Other __________________ (ISO 3166 Country Code 
+        <span class="block">
+            <input type="text" />
+            <input type="text" />
+        </span>) 
+        </span>
+        </div>
+      </div>
+      <div class="flex flex-ml-2 " style="margin-right: 7.5rem;">
+        <span class="bold">4b. Residential Status</span>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Resident Individual </label>
+        </div>
+        <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Non Resident Indian </label>
+          </div>
+          <div class="flex align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Foreign National </label>
+          </div>
+      </div>
+      <div class="flex flex-col flex-mt-1 border-solid p-1">
+        <div class="flex">
+          <h3>Tick if Applicable</h3>
+          <div class="flex ml-5 align-center">
+            <input type="checkbox" />
+            <label class="ml-1"> Residence for tax purposes in jurisdiction(s) outside India </label>
+          </div>
+        </div>
+        <div class="flex flex-ml-2">
+          <span>ISO 3166 Country Code of Jurisdiction of residence</span>
+          <span class="block">
+            <input type="text" />
+            <input type="text" />
+          </span>
+          <span>Place of birth _____________________________________</span>
+        </div>
+        <div class="flex flex-ml-2">
+          <span>Tax Identification Number or Equivalent</span>
+          <span class="flex block align-center ml-1">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </span>
+          <span>ISO3166 Country Code of Birth</span>
+          <span class="flex block align-center">
+            <input type="text" />
+            <input type="text" />
+          </span>
+        </div>
+      </div>
+      <div class="flex">
+        <span class="bold">5a. PAN</span>
+          <span class="flex ml-2 block align-center">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </span>
+      </div>
+      <div class="flex">
+        <span class="bold">5b. Unique Identification Number (UID) / AADHAR</span>
+          <span class="flex ml-2 block align-center">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </span>
+      </div>
+      <div class="flex flex-ml-2 " style="margin-right: 10rem;">
+        <span class="bold">6.   Proof of Identity Submit</span>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Pan Card </label>
+        </div>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Other (Please Specify) ________________________________________ </label>
+        </div>
+      </div>
+      <h3>B. Address details</h3>
+      <span class="bold">1. Contact Details</span>
+      <table class="table border-solid border-col">
+        <tr class="border-solid">
+          <td class="border-solid px-1">Telephone (Office)</td>
+          <td class="flex td-block align-center">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </td>
+          <td class="border-solid px-1">Mobile No</td>
+          <td class="flex td-block align-center">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </td>
+        </tr>
+        <tr class="border-solid">
+          <td class="border-solid px-1">Telephone (Residence</td>
+          <td class="flex td-block align-center">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </td>
+          <td class="border-solid px-1">Email ID</td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="flex flex-ml-2 " style="margin-right: 10rem;">
+        <span class="bold">2. Residence/Correspondence Address</span>
+        <span>Address Type: </span>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Residential  </label>
+        </div>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Business  </label>
+        </div>
+        <div class="flex align-center">
+          <input type="checkbox" />
+          <label class="ml-1"> Unspecified  </label>
+        </div>
+      </div>
+      <table class="table border-solid border-col">
+        <tr class="border-solid">
+          <td class="border-solid px-1">Address</td>
+          <td class="px-10"></td>
+        </tr>
+        <tr>
+          <td><br></td>
+        </tr>
+        <tr class="border-solid">
+          <td class="border-solid px-1">City/Town</td>
+          <td class="px-10"></td>
+          <td class="border-solid px-1">District</td>
+          <td class="px-10"></td>
+          <td class="border-solid px-1">Pin Code</td>
+          <td class="flex td-block align-center">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td class="border-solid px-1">State/U.T Code</td>
+          <td colspan="3"></td>
+          <td class="border-solid px-1">Country/ISO Code</td>
+          <td class="flex td-block align-center">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </td>
+        </tr>
+        <tr class="border-solid">
+          <td colspan="4" class="px-1 border-solid">Specify the Proof of Address Submitted for Residence / Correspondence Address</td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>C. DECLARATION</h3>
+      <div class="flex align-center">
+        <div style="width: 70%;">
+          I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief and I undertake to inform you of any changes therein, immediately. In case any of the above information is found to be false or untrue or misleading or misrepresenting, I am aware that I may be held liable for it.
+        </div>
+        <div class="mx-auto border-solid text-center" style="padding-top: 50px;">
+          <span style="margin-left: 100px;">Client Signature</span>
+        </div>
+      </div>
+      <div class="flex align-center">
+        <label class="ml-1"> Date: </label>
+        <div class="flex block align-center ml-1">
+          <input type="text" placeholder="D"/>
+          <input type="text" placeholder="D"/>
+          <input type="text" placeholder="M"/>
+          <input type="text" placeholder="M"/>
+          <input type="text" placeholder="Y"/>
+          <input type="text" placeholder="Y"/>
+          <input type="text" placeholder="Y"/>
+          <input type="text" placeholder="Y"/>
+        </div>
+      </div>
+      <hr>
+        <h3>FOR OFFICE USE ONLY</h3>
+        <span>In Person Verification (IPV) Details:</span>
+        <span>Name of the Person who has done the IPV: _______________________________</span>
+        <div class="flex flex-ml-2">
+          <span>Designation: _____________________</span>
+          <span>Employee: ______________________________________</span>
+        </div>
+        <span>Name of the Organization: ZERODHA BROKING LTD.</span>
+        <div class="flex space-between align-center">
+          <div class="flex align-center">
+            <label> Date of the IPV: </label>
+            <div class="flex block align-center ml-1">
+              <input type="text" placeholder="D"/>
+              <input type="text" placeholder="D"/>
+              <input type="text" placeholder="M"/>
+              <input type="text" placeholder="M"/>
+              <input type="text" placeholder="Y"/>
+              <input type="text" placeholder="Y"/>
+              <input type="text" placeholder="Y"/>
+              <input type="text" placeholder="Y"/>
+            </div>
+          </div>
+          <span>Signature of the Person who has done the IPV</span>
+          <span>Seal/Stamp of the Intermediar</span>
+        </div>
+        <hr>
+        <div class="flex space-between">
+          <span>Originals Verified and Self-Attested Document Copies Received.</span>
+          <div class="flex flex-col text-center">
+            <span>____________________________</span>
+            <span>Date</span>
+          </div>
+          <div class="flex flex-col text-center">
+            <span>__________________________________________</span>
+            <span>Signature of the Authorized Signatory</span>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
