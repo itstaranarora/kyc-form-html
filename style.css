@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.6;
 }
 
@@ -14,14 +14,22 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.print-format-gutter {
+  background-color: #ddd;
+  padding: 15px 0;
+}
+
 .container {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 2rem;
+  background-color: white;
+  max-width: 8.3in;
+  max-height: 11.69in;
+  padding: 0.2in 0.3in;
+  margin: auto;
+  overflow: hidden;
 }
 
 .container > * + * {
-  margin: 0.5rem 0;
+  margin: 4px 0;
 }
 
 /* Flex Box Styles */
@@ -40,6 +48,7 @@ body {
 
 .align-center {
   align-items: center;
+  justify-content: center;
 }
 
 .flex-ml-2 > * + * {
@@ -53,7 +62,7 @@ body {
 /* margin and padding */
 
 .p-1 {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .p-2 {
@@ -65,7 +74,7 @@ body {
 }
 
 .px-10 {
-  padding: 0 100px;
+  padding: 0 80px;
 }
 
 .mx-auto {
@@ -90,7 +99,11 @@ body {
 
 td > input {
   border: none;
-  width: 550px;
+  width: 430px;
+}
+
+input {
+  width: 4px;
 }
 
 /* Text style */
@@ -118,13 +131,21 @@ td > input {
 }
 
 .block > input {
-  height: 20px;
-  width: 20px;
-  border: 1px solid #333333;
+  height: 17px;
+  width: 17px;
+  border: 0.5px solid #333333;
 }
 
 .td-block > input {
-  height: 20px;
-  width: 20px;
+  height: 100%;
+  width: 17px;
   border-right: 1px solid #333333;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.td-block > input:first-child {
+  border-left: 1px solid #333333;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="print-format-gutter">
     <div class="container flex flex-col">
       <div>
         <h2>Know Your Client (KYC) Application Form - for Individuals</h2>
@@ -53,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="flex space-between" style="padding-right: 6.5rem">
+        <div class="flex space-between" style="padding-right: 4.8rem">
           <span>Account Type*</span>
           <div class="flex align-center">
             <input type="checkbox" />
@@ -70,7 +71,7 @@
         </div>
       </div>
       <h3>A. Identity details</h3>
-      <div class="flex space-between">
+      <div class="flex">
         <table class="table border-solid border-col">
           <tr class="border-solid">
             <th class="border-solid" rowspan="2">1. Name (Same as ID Proof)</th>
@@ -122,19 +123,19 @@
           </div>
           <div class="flex align-center">
             <input type="checkbox" />
-            <label> Other</label>
+            <label class="ml-1"> Other</label>
           </div>
           <div class="flex ml-1 block align-center">
             <label class="bold"> 3c. DOB</label>
             <div class="flex block align-center ml-1">
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
+              <input type="text" placeholder="D"/>
+              <input type="text" placeholder="D"/>
+              <input type="text" placeholder="M"/>
+              <input type="text" placeholder="M"/>
+              <input type="text" placeholder="Y"/>
+              <input type="text" placeholder="Y"/>
+              <input type="text" placeholder="Y"/>
+              <input type="text" placeholder="Y"/>
             </div>
           </div>
       </div>
@@ -256,11 +257,12 @@
         </div>
       </div>
       <h3>B. Address details</h3>
+      <div>
       <span class="bold">1. Contact Details</span>
-      <table class="table border-solid border-col">
-        <tr class="border-solid">
-          <td class="border-solid px-1">Telephone (Office)</td>
-          <td class="flex td-block align-center">
+      <table class="table border-solid border-col" style="width: 100%;">
+        <tr>
+          <td class="border-solid">Telephone (Office)</td>
+          <td class="flex td-block align-center"">
             <input type="text" />
             <input type="text" />
             <input type="text" />
@@ -276,7 +278,7 @@
             <input type="text" />
             <input type="text" />
           </td>
-          <td class="border-solid px-1">Mobile No</td>
+          <td class="border-solid">Mobile No</td>
           <td class="flex td-block align-center">
             <input type="text" />
             <input type="text" />
@@ -295,7 +297,7 @@
           </td>
         </tr>
         <tr class="border-solid">
-          <td class="border-solid px-1">Telephone (Residence</td>
+          <td class="border-solid">Telephone (Residence</td>
           <td class="flex td-block align-center">
             <input type="text" />
             <input type="text" />
@@ -312,10 +314,12 @@
             <input type="text" />
             <input type="text" />
           </td>
-          <td class="border-solid px-1">Email ID</td>
+          <td class="border-solid">Email ID</td>
           <td></td>
         </tr>
       </table>
+      </div>
+      <div>
       <div class="flex flex-ml-2 " style="margin-right: 10rem;">
         <span class="bold">2. Residence/Correspondence Address</span>
         <span>Address Type: </span>
@@ -332,21 +336,21 @@
           <label class="ml-1"> Unspecified  </label>
         </div>
       </div>
-      <table class="table border-solid border-col">
+      <table class="table border-solid border-col" style="width: 100%;">
         <tr class="border-solid">
-          <td class="border-solid px-1">Address</td>
-          <td class="px-10"></td>
+          <td class="border-solid text-center">Address</td>
+          <td></td>
         </tr>
         <tr>
           <td><br></td>
         </tr>
         <tr class="border-solid">
-          <td class="border-solid px-1">City/Town</td>
+          <td class="border-solid text-center">City/Town</td>
           <td class="px-10"></td>
           <td class="border-solid px-1">District</td>
           <td class="px-10"></td>
-          <td class="border-solid px-1">Pin Code</td>
-          <td class="flex td-block align-center">
+          <td class="border-solid text-center">Pin Code</td>
+          <td class="flex td-block align-center" style="width: 100px;">
             <input type="text" />
             <input type="text" />
             <input type="text" />
@@ -356,10 +360,10 @@
           </td>
         </tr>
         <tr>
-          <td class="border-solid px-1">State/U.T Code</td>
+          <td class="border-solid text-center" style="width: 100px;">State/U.T Code</td>
           <td colspan="3"></td>
-          <td class="border-solid px-1">Country/ISO Code</td>
-          <td class="flex td-block align-center">
+          <td class="border-solid text-center" style="width: 100px;">Country/ISO Code</td>
+          <td class="flex td-block align-center" style="width: 100px;">
             <input type="text" />
             <input type="text" />
             <input type="text" />
@@ -369,10 +373,12 @@
           </td>
         </tr>
         <tr class="border-solid">
-          <td colspan="4" class="px-1 border-solid">Specify the Proof of Address Submitted for Residence / Correspondence Address</td>
-          <td></td>
+          <td colspan="4" class="text-center border-solid">Specify the Proof of Address Submitted for Residence / Correspondence Address</td>
+          <td colspan="2"></td>
         </tr>
       </table>
+    </div>
+    <div>
       <h3>C. DECLARATION</h3>
       <div class="flex align-center">
         <div style="width: 70%;">
@@ -382,8 +388,8 @@
           <span style="margin-left: 100px;">Client Signature</span>
         </div>
       </div>
-      <div class="flex align-center">
-        <label class="ml-1"> Date: </label>
+      <div class="flex" style="margin-top: 3px;">
+        <label> Date: </label>
         <div class="flex block align-center ml-1">
           <input type="text" placeholder="D"/>
           <input type="text" placeholder="D"/>
@@ -395,7 +401,9 @@
           <input type="text" placeholder="Y"/>
         </div>
       </div>
+    </div>
       <hr>
+      <div>
         <h3>FOR OFFICE USE ONLY</h3>
         <span>In Person Verification (IPV) Details:</span>
         <span>Name of the Person who has done the IPV: _______________________________</span>
@@ -404,7 +412,7 @@
           <span>Employee: ______________________________________</span>
         </div>
         <span>Name of the Organization: ZERODHA BROKING LTD.</span>
-        <div class="flex space-between align-center">
+        <div class="flex justify-space">
           <div class="flex align-center">
             <label> Date of the IPV: </label>
             <div class="flex block align-center ml-1">
@@ -421,8 +429,9 @@
           <span>Signature of the Person who has done the IPV</span>
           <span>Seal/Stamp of the Intermediar</span>
         </div>
+      </div>
         <hr>
-        <div class="flex space-between">
+        <div class="flex justify-space" style="margin-top: 1.5rem;">
           <span>Originals Verified and Self-Attested Document Copies Received.</span>
           <div class="flex flex-col text-center">
             <span>____________________________</span>
@@ -434,5 +443,6 @@
           </div>
         </div>
     </div>
+  </div>
   </body>
 </html>
