@@ -149,3 +149,12 @@ input {
 .td-block > input:first-child {
   border-left: 1px solid #333333;
 }
+
+.checkbox-block > input {
+  width: 13px;
+  height: 13px;
+}
+
+.inline {
+  vertical-align: middle;
+}

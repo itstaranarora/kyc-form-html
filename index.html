@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="print-format-gutter">
-    <div class="container flex flex-col">
+    <div class="container">
       <div>
         <h2>Know Your Client (KYC) Application Form - for Individuals</h2>
         <p>Please fill this form in English and BLOCK Letters</p>
@@ -18,22 +18,22 @@
           corresponding window)
         </p>
       </div>
-      <div class="flex flex-col border-solid p-1">
+      <div class="border-solid p-1">
         <span class="font-size-1">
           <span class="bold">For office use only</span> (To be filled by the
           financial institution)
         </span>
-        <div class="flex space-between">
+        <div class="flex" style="justify-content: space-between;">
           <span>Application Type*</span>
-          <div class="flex align-center">
+          <div class="checkbox-block">
             <input type="checkbox" />
             <label class="ml-1"> New </label>
           </div>
-          <div class="flex align-center">
+          <div class="checkbox-block">
             <input type="checkbox" />
             <label class="ml-1"> Update </label>
           </div>
-          <div class="flex align-center">
+          <span class="flex">
             <label> KYC </label>
             <div class="flex block align-center ml-1">
               <input type="text" />
@@ -52,19 +52,19 @@
               <input type="text" />
               <input type="text" />
             </div>
-          </div>
+          </span>
         </div>
-        <div class="flex space-between" style="padding-right: 4.8rem">
+        <div class="flex space-between" style="padding-right: 4.3rem">
           <span>Account Type*</span>
-          <div class="flex align-center">
+          <div class="checkbox-block">
             <input type="checkbox" />
             <label class="ml-1"> Normal </label>
           </div>
-          <div class="flex align-center">
+          <div class="checkbox-block">
             <input type="checkbox" />
             <label class="ml-1"> Simplified (for low risk customers) </label>
           </div>
-          <div class="flex align-center">
+          <div class="checkbox-block">
             <input type="checkbox" />
             <label class="ml-1"> Small</label>
           </div>
@@ -100,30 +100,30 @@
       </div>
       <div class="flex space-between">
         <span class="bold">3a. Gender</span>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Male </label>
+          <label class=""> Male </label>
         </div>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Female</label>
+          <label class=""> Female</label>
         </div>
-        <div class="flex align-center">
+        <div class="checkbox-block">
             <input type="checkbox" />
-            <label class="ml-1">  Transgender</label>
+            <label >  Transgender</label>
         </div>
         <span class="bold">3b. Marital Status</span>
-        <div class="flex align-center">
+        <div class="checkbox-block">
             <input type="checkbox" />
-            <label class="ml-1"> Single</label>
+            <label > Single</label>
           </div>
-          <div class="flex align-center">
+          <div class="checkbox-block">
             <input type="checkbox" />
-            <label class="ml-1"> Married</label>
+            <label > Married</label>
           </div>
-          <div class="flex align-center">
+          <div class="checkbox-block">
             <input type="checkbox" />
-            <label class="ml-1"> Other</label>
+            <label> Other</label>
           </div>
           <div class="flex ml-1 block align-center">
             <label class="bold"> 3c. DOB</label>
@@ -139,15 +139,15 @@
             </div>
           </div>
       </div>
-      <div class="flex flex-ml-2 " style="margin-right: 10rem;">
+      <div class="flex flex-ml-2" style="margin-right: 10rem;">
         <span class="bold">4a. Citizenship</span>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Indian </label>
+          <label> Indian </label>
         </div>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <span class="ml-1"> Other __________________ (ISO 3166 Country Code 
+          <span> Other ___________________________ (ISO 3166 Country Code 
         <span class="block">
             <input type="text" />
             <input type="text" />
@@ -155,27 +155,27 @@
         </span>
         </div>
       </div>
-      <div class="flex flex-ml-2 " style="margin-right: 7.5rem;">
+      <div class="flex flex-ml-2" style="margin-right: 7.5rem;">
         <span class="bold">4b. Residential Status</span>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Resident Individual </label>
+          <label> Resident Individual </label>
         </div>
-        <div class="flex align-center">
+        <div class="checkbox-block">
             <input type="checkbox" />
-            <label class="ml-1"> Non Resident Indian </label>
+            <label> Non Resident Indian </label>
           </div>
-          <div class="flex align-center">
+          <div class="checkbox-block"">
             <input type="checkbox" />
-            <label class="ml-1"> Foreign National </label>
+            <label> Foreign National </label>
           </div>
       </div>
       <div class="flex flex-col flex-mt-1 border-solid p-1">
         <div class="flex">
           <h3>Tick if Applicable</h3>
-          <div class="flex ml-5 align-center">
+          <div class="checkbox-block ml-5 ">
             <input type="checkbox" />
-            <label class="ml-1"> Residence for tax purposes in jurisdiction(s) outside India </label>
+            <label> Residence for tax purposes in jurisdiction(s) outside India </label>
           </div>
         </div>
         <div class="flex flex-ml-2">
@@ -247,13 +247,13 @@
       </div>
       <div class="flex flex-ml-2 " style="margin-right: 10rem;">
         <span class="bold">6.   Proof of Identity Submit</span>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
           <label class="ml-1"> Pan Card </label>
         </div>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Other (Please Specify) ________________________________________ </label>
+          <label class="ml-1"> Other (Please Specify) ______________________________________________ </label>
         </div>
       </div>
       <h3>B. Address details</h3>
@@ -323,26 +323,26 @@
       <div class="flex flex-ml-2 " style="margin-right: 10rem;">
         <span class="bold">2. Residence/Correspondence Address</span>
         <span>Address Type: </span>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Residential  </label>
+          <label > Residential  </label>
         </div>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Business  </label>
+          <label > Business  </label>
         </div>
-        <div class="flex align-center">
+        <div class="checkbox-block">
           <input type="checkbox" />
-          <label class="ml-1"> Unspecified  </label>
+          <label > Unspecified  </label>
         </div>
       </div>
       <table class="table border-solid border-col" style="width: 100%;">
         <tr class="border-solid">
           <td class="border-solid text-center">Address</td>
-          <td></td>
+          <td colspan="5"></td>
         </tr>
         <tr>
-          <td><br></td>
+          <td colspan="6"><br></td>
         </tr>
         <tr class="border-solid">
           <td class="border-solid text-center">City/Town</td>
@@ -388,7 +388,7 @@
           <span style="margin-left: 100px;">Client Signature</span>
         </div>
       </div>
-      <div class="flex" style="margin-top: 3px;">
+      <div class="flex" style="margin-top: 1rem;">
         <label> Date: </label>
         <div class="flex block align-center ml-1">
           <input type="text" placeholder="D"/>
@@ -407,12 +407,12 @@
         <h3>FOR OFFICE USE ONLY</h3>
         <span>In Person Verification (IPV) Details:</span>
         <span>Name of the Person who has done the IPV: _______________________________</span>
-        <div class="flex flex-ml-2">
-          <span>Designation: _____________________</span>
-          <span>Employee: ______________________________________</span>
+        <div>
+          <span>Designation: ________________________</span>
+          <span class="ml-2">Employee: ___________________________________________</span>
         </div>
         <span>Name of the Organization: ZERODHA BROKING LTD.</span>
-        <div class="flex justify-space">
+        <div class="flex justify-space" style="margin-top: 1rem;">
           <div class="flex align-center">
             <label> Date of the IPV: </label>
             <div class="flex block align-center ml-1">
